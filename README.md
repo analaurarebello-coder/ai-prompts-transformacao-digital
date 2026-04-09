@@ -1,6 +1,6 @@
 # 🤖 Prompts de IA para Transformação Digital
 
-> Prompts estruturados para gerar relatórios completos e acionáveis sobre adoção de Inteligência Artificial e outras tecnologias emergentes — por cargo ou por empresa.
+> Prompts estruturados para gerar relatórios completos e acionáveis sobre adoção de Inteligência Artificial e outras tecnologias emergentes — por cargo, por empresa, por consolidado executivo e por business case.
 
 *por Laura · 2025*
 
@@ -8,12 +8,14 @@
 
 ## 📁 O que tem neste repositório
 
-Este repositório contém dois prompts complementares de engenharia de IA, desenvolvidos para apoiar processos de transformação digital em empresas de qualquer setor:
+Este repositório contém quatro prompts complementares de engenharia de IA, desenvolvidos para apoiar processos de transformação digital em empresas de qualquer setor e em diferentes níveis de maturidade analítica.
 
 | Prompt | Para quem | O que gera |
 |---|---|---|
 | [📋 Relatório por Cargo](#-prompt-1--relatório-de-usos-de-ia-por-cargo) | Profissionais, RH, consultores | Mapa de 80+ usos de IA para um cargo específico |
 | [🏭 Relatório por Empresa](#-prompt-2--relatório-de-tecnologias-emergentes-por-empresa) | Líderes, consultores, C-level | Mapa de IA + outras tecnologias por área da empresa |
+| [🧭 Consolidação Executiva por Cargos](#-prompt-3--consolidação-executiva-de-usos-de-ia-por-cargos) | Diretoria, PMO, consultores, transformação digital | Síntese executiva de todos os cargos analisados, com consolidado, Excel e apresentação |
+| [💼 Business Case de IA](#-prompt-4--business-case-de-produtividade-e-ganhos-financeiros) | CEO, COO, CFO, diretoria e investidores | Estimativa de produtividade, custos, ganhos financeiros, payback e materiais executivos |
 
 ---
 
@@ -190,6 +192,112 @@ Dados recomendados (quanto mais, melhor):
 
 ---
 
+## 🧭 Prompt 3 — Consolidação Executiva de Usos de IA por Cargos
+
+**Arquivo:** [`prompts/prompt-consolidacao-executiva-cargos.md`](prompts/prompt-consolidacao-executiva-cargos.md)
+
+### O que é
+
+A partir de um conjunto de relatórios individuais já produzidos por cargo, gera um consolidado executivo da empresa com visão transversal de prioridades, níveis de dificuldade, quick wins, materiais para diretoria e uma apresentação pronta para discussão executiva.
+
+### O que o output deve gerar
+
+| Entregável | Finalidade |
+|---|---|
+| Relatório executivo consolidado | Resumir os achados de todos os cargos em uma visão única |
+| Planilha geral | Listar cargos, arquivos, quantidades por dificuldade e exemplos relevantes |
+| Apresentação executiva | Mostrar metodologia, consolidado e um slide por cargo |
+| Síntese metodológica | Explicar como os relatórios individuais foram transformados em visão corporativa |
+
+O prompt foi desenhado para situações em que a empresa já mapeou funções individualmente e agora precisa converter esse material em **priorização organizacional**, **governança de implantação** e **comunicação executiva**.
+
+### Quando usar
+
+Use este prompt quando você já tiver produzido os relatórios por cargo e quiser transformar dezenas de análises individuais em um material executivo integrado, adequado para diretoria, comitê de inovação, PMO, RH ou transformação digital.
+
+### Como usar
+
+**1.** Abra o arquivo [`prompts/prompt-consolidacao-executiva-cargos.md`](prompts/prompt-consolidacao-executiva-cargos.md) e copie o conteúdo completo.
+
+**2.** Reúna como entrada:
+
+```
+- Lista de cargos analisados
+- Arquivos ou trechos dos relatórios individuais por cargo
+- Classificação de dificuldade já usada nos relatórios
+- Exemplos de aplicações mais relevantes por cargo
+- Contexto da empresa (setor, porte, objetivos e restrições)
+```
+
+**3.** Solicite a geração dos materiais consolidados em relatório, planilha e apresentação.
+
+> 💡 Este prompt funciona especialmente bem quando os relatórios individuais seguem um padrão consistente de categorias, dificuldade e ganhos esperados.
+
+### O relatório consolidado inclui
+
+- Visão executiva dos cargos cobertos e da metodologia usada
+- Sumário por nível de dificuldade consolidado na empresa
+- Destaques por área ou macrofunção
+- Exemplos selecionados de aplicações por cargo
+- Proposta de apresentação com um slide por cargo
+- Arquivo geral para uso interno e compartilhamento com a liderança
+
+---
+
+## 💼 Prompt 4 — Business Case de Produtividade e Ganhos Financeiros
+
+**Arquivo:** [`prompts/prompt-business-case-ia-produtividade.md`](prompts/prompt-business-case-ia-produtividade.md)
+
+### O que é
+
+A partir do consolidado dos cargos, das premissas salariais e dos níveis de dificuldade das aplicações, gera um business case executivo para estimar produtividade, economia potencial, custos de licenças, APIs, cloud, esforço de implantação, payback e materiais para tomada de decisão.
+
+### O que o output deve gerar
+
+| Entregável | Finalidade |
+|---|---|
+| Business case financeiro | Estimar custos, ganhos, economia e faixas de retorno |
+| Cenários de adoção | Comparar ondas como Muito Fácil + Fácil e Média + Difícil |
+| Tese de implementação | Priorizar ondas, dependências, quick wins e responsáveis |
+| Matriz por área | Mostrar onde há mais retorno, viabilidade e complexidade |
+| Apresentação executiva | Suportar decisão de diretoria com narrativa objetiva |
+
+Este prompt foi desenhado para traduzir um mapeamento técnico de usos de IA em uma linguagem de **decisão executiva**, com foco em **ROI**, **payback**, **priorização** e **viabilidade organizacional**.
+
+### Quando usar
+
+Use este prompt quando a empresa já tiver identificado casos de uso por cargo ou por área e precisar responder perguntas como: quanto custa implantar, quanto tempo economiza, quanto vale financeiramente, quais APIs e infraestrutura serão necessárias, e em quanto tempo o programa pode ficar de pé.
+
+### Como usar
+
+**1.** Abra o arquivo [`prompts/prompt-business-case-ia-produtividade.md`](prompts/prompt-business-case-ia-produtividade.md) e copie o conteúdo completo.
+
+**2.** Reúna como entrada:
+
+```
+- Consolidado dos cargos e aplicações por nível de dificuldade
+- Número de colaboradores e distribuição por função
+- Premissas salariais médias por grupo de cargos
+- Restrições específicas (ex.: exclusão de ganhos econômicos para algumas funções)
+- Ferramentas candidatas (LLMs, automação, OCR, cloud, integrações)
+- Premissas de adoção, treinamento e suporte
+```
+
+**3.** Solicite o business case em duas camadas: relatório detalhado e versão executiva para diretoria.
+
+> 💡 O valor deste prompt cresce muito quando as premissas financeiras são explícitas e quando os ganhos são separados entre benefício quantitativo e benefício qualitativo.
+
+### O business case inclui
+
+- Estimativa de horas economizadas por cenário
+- Conversão de produtividade em impacto financeiro
+- Estimativa de custos de licenças, APIs, OCR, automação e cloud
+- Sensibilidade por faixa de adoção
+- Estimativa de prazo de implantação por onda
+- Materiais executivos para discussão com diretoria, CFO, COO e comitês internos
+
+---
+
 ## 🏷️ Legenda de Dificuldade
 
 Usada em todos os relatórios gerados por ambos os prompts:
@@ -205,13 +313,15 @@ Usada em todos os relatórios gerados por ambos os prompts:
 
 ## 📂 Estrutura do Repositório
 
-```
+```text
 ai-prompts-transformacao-digital/
 ├── README.md
 ├── LICENSE
 ├── prompts/
 │   ├── prompt-usos-ia-por-cargo.md
-│   └── prompt-tecnologias-por-empresa.md
+│   ├── prompt-tecnologias-por-empresa.md
+│   ├── prompt-consolidacao-executiva-cargos.md
+│   └── prompt-business-case-ia-produtividade.md
 └── exemplos/
     ├── exemplo-analista-financeiro.md
     └── exemplo-agroverde-soja-laranja-pecuaria.md
@@ -224,7 +334,7 @@ ai-prompts-transformacao-digital/
 Contribuições são muito bem-vindas! Você pode ajudar de três formas:
 
 ### 📤 Compartilhar outputs gerados
-Usou um dos prompts e gerou um relatório interessante? Abra uma **Issue** com a tag `exemplo` informando o cargo ou setor e os principais destaques. Os melhores exemplos serão adicionados à pasta [`exemplos/`](exemplos/).
+Usou um dos prompts e gerou um relatório interessante? Abra uma **Issue** com a tag `exemplo` informando o cargo, a empresa ou o setor e os principais destaques. Os melhores exemplos serão adicionados à pasta [`exemplos/`](exemplos/).
 
 ### 🛠️ Sugerir melhorias nos prompts
 Identificou uma lacuna, um caso de uso não coberto ou uma forma de tornar os relatórios mais precisos? Abra uma **Issue** com a tag `melhoria` descrevendo sua sugestão.
@@ -233,6 +343,8 @@ Identificou uma lacuna, um caso de uso não coberto ou uma forma de tornar os re
 Quer adaptar os prompts para inglês, espanhol ou outro idioma? Crie um arquivo na pasta `prompts/` com o sufixo do idioma:
 - `prompt-usos-ia-por-cargo-en.md`
 - `prompt-tecnologias-por-empresa-es.md`
+- `prompt-consolidacao-executiva-cargos-en.md`
+- `prompt-business-case-ia-produtividade-en.md`
 
 ### Como enviar um Pull Request
 
@@ -246,7 +358,7 @@ git checkout -b minha-contribuicao
 
 # 4. Faça suas alterações e commit
 git add .
-git commit -m "Adiciona exemplo: Gerente de Projetos de TI"
+git commit -m "Adiciona novos prompts executivos de IA"
 
 # 5. Envie para o seu fork
 git push origin minha-contribuicao
@@ -264,5 +376,3 @@ Livre para usar, adaptar e compartilhar — créditos são sempre apreciados. �
 ---
 
 *Criado por Laura · 2026*
-
-
