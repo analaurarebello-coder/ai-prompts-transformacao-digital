@@ -6,7 +6,7 @@
 
 ## Visão geral
 
-Este repositório reúne **quatro prompts complementares** de engenharia de IA, pensados para apoiar estudos de transformação digital em empresas de diferentes setores, portes e níveis de maturidade. Em conjunto, eles permitem sair de uma análise pontual por função ou por empresa e chegar a uma visão executiva mais ampla, com priorização, estimativas de valor e materiais de suporte para tomada de decisão.
+Este repositório reúne **cinco prompts complementares** de engenharia de IA, pensados para apoiar estudos de transformação digital em empresas de diferentes setores, portes e níveis de maturidade. Em conjunto, eles permitem sair de uma análise pontual por função ou por empresa e chegar a uma visão executiva mais ampla, com priorização, estimativas de valor e materiais de suporte para tomada de decisão.
 
 A lógica de uso pode começar por um cargo específico, avançar para uma leitura empresarial mais abrangente, consolidar dezenas de análises em uma visão única e, por fim, converter essa base em um business case executivo. Cada prompt também pode ser utilizado de forma independente, conforme o estágio do projeto.
 
@@ -20,6 +20,7 @@ A lógica de uso pode começar por um cargo específico, avançar para uma leitu
 | [Prompt 2 — Relatório de Tecnologias Emergentes por Empresa](#prompt-2--relatório-de-tecnologias-emergentes-por-empresa) | Mapear IA e outras tecnologias por área da empresa | Diretoria, consultores, PMO, C-level | Diagnóstico tecnológico por área, roadmap e ranking de iniciativas |
 | [Prompt 3 — Consolidação Executiva de Usos de IA por Cargos](#prompt-3--consolidação-executiva-de-usos-de-ia-por-cargos) | Consolidar múltiplos relatórios individuais em visão corporativa | Diretoria, PMO, comitês de inovação, RH | Relatório executivo, planilha consolidada e apresentação |
 | [Prompt 4 — Business Case de IA, Produtividade e Ganhos Financeiros](#prompt-4--business-case-de-ia-produtividade-e-ganhos-financeiros) | Traduzir oportunidades em estimativas econômicas e decisórias | CEO, COO, CFO, diretoria e investidores | Business case, cenários, custos, ganhos, payback e narrativa executiva |
+| [Prompt 5 — Avaliação Estratégica de Tecnologias pelo Framework HIT RADAR](#prompt-5--avaliação-estratégica-de-tecnologias-pelo-framework-hit-radar) | Priorizar tecnologias por distância, impacto e velocidade | Board, diretoria, comitê de inovação, estratégia, PMO e liderança de tecnologia | Radar executivo, tech cards, roadmap e recomendações para tomada de decisão |
 
 ---
 
@@ -117,6 +118,28 @@ Use este prompt quando a empresa já tiver casos de uso identificados e precisar
 
 ---
 
+## Prompt 5 — Avaliação Estratégica de Tecnologias pelo Framework HIT RADAR
+
+**Arquivo:** [`prompts/prompt-hit-radar-avaliacao-tecnologias.md`](prompts/prompt-hit-radar-avaliacao-tecnologias.md)
+
+Este prompt transforma a lógica do **HIT RADAR** em um método replicável para avaliação executiva de tecnologias. Em vez de apenas descrever tendências, ele força uma leitura gerencial baseada em **distância**, **impacto** e **velocidade**, ajudando a liderança a decidir o que deve ser adotado, experimentado, explorado ou apenas monitorado.
+
+Ele é especialmente útil quando a empresa precisa organizar o debate tecnológico em linguagem de board, equilibrando maturidade, viabilidade, urgência e potencial de geração de valor.
+
+### Estrutura de saída
+
+| Entregável | Finalidade |
+|---|---|
+| Relatório executivo completo | Traduzir o framework HIT RADAR para o contexto real da empresa |
+| Tabela-mestre do radar | Consolidar tecnologias, classificações e horizonte recomendado |
+| Roteiro de apresentação executiva | Apoiar discussão com board, diretoria e comitês |
+
+### Quando usar
+
+Use este prompt quando a necessidade for construir uma **priorização tecnológica de nível executivo**, evitando tanto o hype quanto o conservadorismo excessivo, com critérios claros para adoção, experimentação, exploração e monitoramento.
+
+---
+
 ## Como os prompts se conectam
 
 | Etapa do projeto | Prompt mais indicado | Resultado esperado |
@@ -125,8 +148,9 @@ Use este prompt quando a empresa já tiver casos de uso identificados e precisar
 | Ampliar para visão empresarial | Prompt 2 | Diagnóstico por área e roadmap tecnológico |
 | Consolidar múltiplos cargos | Prompt 3 | Síntese corporativa e narrativa executiva |
 | Construir racional econômico | Prompt 4 | Business case, cenários, custos e payback |
+| Priorizar tecnologias no nível do board | Prompt 5 | Radar executivo, tech cards e roadmap de decisão |
 
-Na prática, muitas organizações começam pelo **Prompt 1**, avançam para o **Prompt 3** quando já possuem massa crítica de relatórios e, em seguida, usam o **Prompt 4** para apoiar decisão de investimento. O **Prompt 2** pode ser utilizado em paralelo quando a necessidade for uma leitura mais ampla de tecnologias emergentes por área empresarial, mesmo antes de mapear cargos individualmente.
+Na prática, muitas organizações começam pelo **Prompt 1**, avançam para o **Prompt 3** quando já possuem massa crítica de relatórios e, em seguida, usam o **Prompt 4** para apoiar decisão de investimento. O **Prompt 2** pode ser utilizado em paralelo quando a necessidade for uma leitura mais ampla de tecnologias emergentes por área empresarial, mesmo antes de mapear cargos individualmente. Já o **Prompt 5** entra quando a liderança precisa transformar o debate sobre tecnologias em uma agenda executiva priorizada, usando a lógica de distância, impacto e velocidade do framework HIT RADAR.
 
 ---
 
@@ -162,6 +186,7 @@ ai-prompts-transformacao-digital/
     ├── prompt-tecnologias-por-empresa.md
     ├── prompt-consolidacao-executiva-cargos.md
     ├── prompt-business-case-ia-produtividade.md
+    ├── prompt-hit-radar-avaliacao-tecnologias.md
     └── exemplos/
         ├── exemplo-agroverde-soja-laranja-pecuaria.md
         └── exemplo_gerente_vendas_IA

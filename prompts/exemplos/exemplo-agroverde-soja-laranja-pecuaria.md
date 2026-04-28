@@ -768,5 +768,5 @@
 ---
 
 *Relatório gerado com o prompt "Tecnologias por Empresa" · AgroVerde Ltda. (empresa fictícia) · 2025*  
-*Criado por Laura · Repositório: [ai-prompts-por-cargo](https://github.com)*
+*Criado por Laura · Exemplo ilustrativo do repositório ai-prompts-transformacao-digital*
 
